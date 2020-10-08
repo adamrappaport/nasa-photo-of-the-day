@@ -2,6 +2,10 @@ import React, {useState, useEffect} from "react";
 import axios from 'axios'
 import DisplayS from './DisplayS'
 import "./App.css";
+import styles from 'styled-components'
+
+
+
 
 function App() {
   const [image,setImage] = useState({})
@@ -36,7 +40,7 @@ function App() {
        
       </p>
 
-      <DisplayS  imgInfo = {image.url}imageData = {image.title} copyright = {image.copyright}
+      <DisplayS  imgInfo = {image.url} title = {image.title} copyright = {image.copyright}
       date = {image.date} imageDesc={image.explanation} />
     </div>
 
